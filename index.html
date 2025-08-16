@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Будапешт — План на 2 дня</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --card: #121a2a;
+    --accent: #62a3ff;
+    --muted: #98a2b3;
+    --text: #e6edf7;
+    --ok: #7ad97a;
+  }
+  html, body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.5;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 18px; }
+  .title { font-size: 28px; font-weight: 800; letter-spacing: 0.2px; }
+  .subtitle { color: var(--muted); margin-top: 4px; }
+  .card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px; padding: 16px 16px; margin: 14px 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    backdrop-filter: blur(4px);
+  }
+  .day { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; }
+  .badge { background: rgba(98,163,255,0.18); color: var(--accent); padding: 4px 10px; border-radius: 30px; font-size: 12px; border: 1px solid rgba(98,163,255,0.35); }
+  .item { display: grid; grid-template-columns: 84px 1fr; gap: 12px; padding: 10px 0; border-top: 1px dashed rgba(255,255,255,0.08); }
+  .item:first-of-type { border-top: none; }
+  .time { color: var(--muted); font-weight: 600; }
+  .place { font-weight: 650; }
+  .row-note { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .btn {
+    display: inline-block; text-decoration: none; color: white;
+    background: linear-gradient(90deg, #4c8dff, #5aa9ff);
+    padding: 8px 12px; border-radius: 12px; font-weight: 700; font-size: 14px;
+  }
+  .btn.secondary {
+    background: transparent; color: var(--accent);
+    border: 1px solid rgba(98,163,255,0.35);
+  }
+  .totals { font-weight: 700; color: var(--ok); }
+  .grid-2 { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  @media (min-width: 700px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+  .footer { color: var(--muted); font-size: 12px; margin-top: 10px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">🇭🇺 Будапешт — план на 2 дня</div>
+    <div class="subtitle">Ссылки открываются в Google Maps. Время — ориентировочное, цены указаны для двоих.</div>
+
+    <div class="card">
+      <div class="day"><span class="badge">ДЕНЬ 1</span> Воскресенье</div>
+      <div class="item">
+        <div class="time">13:40</div>
+        <div>
+          <div class="place">Прилет в Будапешт (BUD)</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">14:30</div>
+        <div>
+          <div class="place">Камера хранения — Nyugati Station</div>
+          <div class="row-note">€10–14</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Nyugati+p%C3%A1lyaudvar,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">14:45–15:15</div>
+        <div>
+          <div class="place">Лёгкий обед / кофе — Madal Cafe</div>
+          <div class="row-note">€15–20</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Madal+Cafe,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">15:30–16:15</div>
+        <div>
+          <div class="place">Базилика Святого Иштвана</div>
+          <div class="row-note">€20 за двоих</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=St.+Stephen%27s+Basilica,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">16:30–17:15</div>
+        <div>
+          <div class="place">Парламент Венгрии (осмотр снаружи)</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Hungarian+Parliament+Building,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">17:30–18:15</div>
+        <div>
+          <div class="place">Квартира (Gyöngyhàz utca 6)</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=1132+Budapest,+Gy%C3%B6ngyh%C3%A0z+utca+6" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">19:30–20:30</div>
+        <div>
+          <div class="place">Круиз по Дунаю с шампанским — Silverline Cruises Dock (Újlipótváros, 1138)</div>
+          <div class="row-note">€40 за двоих</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Silverline+Cruises,+Budapest,+1138" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">20:45–22:00</div>
+        <div>
+          <div class="place">Ужин на набережной — Dunapark Café &amp; Restaurant</div>
+          <div class="row-note">€45–50</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Dunapark+Cafe,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">22:15–00:00</div>
+        <div>
+          <div class="place">Бар — Szimpla Kert</div>
+          <div class="row-note">€20</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Szimpla+Kert,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="day"><span class="badge">ДЕНЬ 2</span> Понедельник</div>
+      <div class="item">
+        <div class="time">09:00</div>
+        <div>
+          <div class="place">Выселение, сдача вещей — Nyugati Station</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Nyugati+p%C3%A1lyaudvar,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">09:15–10:15</div>
+        <div>
+          <div class="place">Завтрак — New York Café</div>
+          <div class="row-note">€40 за двоих</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=New+York+Cafe,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">10:30–11:45</div>
+        <div>
+          <div class="place">Королевский дворец (Buda Castle)</div>
+          <div class="row-note">€36 за двоих</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Buda+Castle,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">12:00–13:00</div>
+        <div>
+          <div class="place">Рыбацкий бастион</div>
+          <div class="row-note">Бесплатно (башни ~€4)</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Fisherman%27s+Bastion,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">13:15–14:15</div>
+        <div>
+          <div class="place">Обед — Pest-Buda Bistro</div>
+          <div class="row-note">€50</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Pest-Buda+Bistro,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">14:30–16:30</div>
+        <div>
+          <div class="place">Прогулка по району + десерт — Ruszwurm Confectionery</div>
+          <div class="row-note">€10–15</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Ruszwurm+Cukr%C3%A1szda,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">17:00</div>
+        <div>
+          <div class="place">Забрать вещи — Nyugati Station</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=Nyugati+p%C3%A1lyaudvar,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">17:30</div>
+        <div>
+          <div class="place">Автобус 100E с Deák Ferenc tér → аэропорт</div>
+          <div class="row-note">€11 за двоих</div>
+          <div class="links">
+            <a class="btn" href="https://maps.google.com/?q=De%C3%A1k+Ferenc+t%C3%A9r,+Budapest" target="_blank">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="time">20:15</div>
+        <div>
+          <div class="place">Вылет из Будапешта</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="day"><span class="badge">ИТОГО</span> Бюджет на двоих</div>
+      <div class="item">
+        <div class="time">≈</div>
+        <div>
+          <div class="place totals">€370–390 за 2 дня</div>
+          <div class="row-note">Питание, развлечения, транспорт, камеры хранения. Без учета жилья и сувениров.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">Подсказка: добавь эту страницу в «Поделиться» → «На экран домой», чтобы открыть как приложение.</div>
+  </div>
+</body>
+</html>
